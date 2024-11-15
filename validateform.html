@@ -1,0 +1,28 @@
+<html>
+<head>
+	<title>Student Registration Form</title>
+	<style>
+		td{
+			padding:8px;
+		}
+		.error{
+			color:red;
+			font-size:0.9em;
+		}
+	</style>
+	<script>
+		function validateForm(){
+			document.querySelectorAll('error').forEach(error=>error.textContent='');
+			let isValid=true;
+		const firstName=document.forms[0]["first Name"].value;
+		if(!first Name){
+			document.getElementById('firstNameError').textContent='First Name is required';
+			isValid=false;
+		}
+		const lastName=document.forms[0]["LastName"].value;
+		if(!lastName){
+			document.getElementById('lastNameError').textContent='Last Name is required';
+			isValid=false;
+		}
+		const email=document.forms[0]["email"].value;
+		const emailPattern=/^[^\s@+
